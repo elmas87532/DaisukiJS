@@ -3,8 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>We love JS</title>
+	<script type="text/javascript">
+	function add(){
+	var num1 = parseInt(document.getElementById('num1').value);
+	var num2 = parseInt(document.getElementById('num2').value);
+	var num=num1+num2;
+	alert("總和：" + num);
+	}
+	</script>
 </head>
 <body>
-	
+	<input type="text" id="num1" /> +
+	<input type="text" id="num2" /> 
+	<input type="button" onclick="add()"  value="加總" />
 </body>
 </html>
